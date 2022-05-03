@@ -1,0 +1,57 @@
+Problems # 10
+https://facultyweb.cs.wwu.edu/~wehrwes/courses/csci241_22s/lectures/L10/P10.html 
+
+1. Precondition left rotation: right is not null
+                right rotation: left is not null
+2. The object types in the tree must be comparable in order to be ranked in some sort of fashion 
+3. right(15)
+   left(10)
+4. Left rotation 
+   pre-rotation:
+   x < y
+   α < x
+   β < y
+   γ > y
+   
+   post-rotation: 
+   x is left of y
+   α is left of x
+   β < y > x ; β is right of x, in order of β to originally be a child of y, it must have first been larger than x
+   γ is right of y
+   
+   Right rotation:
+   pre-rotation:
+   x < y
+   α < x
+   β > x
+   γ > y
+   
+   post-rotation: 
+   x is left of y
+   α is left of x
+   β < y > x ; β is left of y, in order of β to originally be a child of x, it must have first been smaller than y
+   γ is right of y
+   
+5. 
+
+    10(1)
+(0)8    15(0)
+    (0)11  16(0)
+no rotations needed
+
+
+      10(3)
+  (0)8    15(0)
+        (0)11  16(1)
+                  18(0)
+ leftRotate(15)
+
+      10(3)
+  (0)8    15(-2)
+        (0)12  16(1)
+      (0)11  
+ rightRotate(15)
+ leftRotate(10)
+
+   
+   
