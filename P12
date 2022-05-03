@@ -1,0 +1,23 @@
+Problems # 12
+https://facultyweb.cs.wwu.edu/~wehrwes/courses/csci241_22s/lectures/L12/P12.html
+
+1. Yes, a sorted array is a heap
+2. 
+
+```java
+return A[0];
+```
+3. add: O(log n)
+4. peek: O(1)
+5. poll: O(n log n)
+6. 
+```java
+public void changePriority(V v, P p){
+  for(int i = 0; i < A.length; i++){
+    if(A[i] == v){
+      v.priority = p;
+    }
+  }
+}
+```
+runtime: O(n)
